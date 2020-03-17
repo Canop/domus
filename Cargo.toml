@@ -1,0 +1,36 @@
+[package]
+name = "domus"
+version = "0.1.0"
+authors = ["denys.seguret@gmail.com"]
+description = "DOM library - not for use"
+keywords = ["wasm", "web", "dom"]
+categories = ["gui", "web-programming", "wasm"]
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+wasm-bindgen = { version = "0.2.59", features = ["serde-serialize"]  }
+js-sys = "0.3.36"
+wasm-bindgen-futures = "0.4.9"
+serde = { version = "1.0.80", features = ["derive"] }
+serde_derive = "^1.0.59"
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+	'Attr',
+	'console',
+	'Document',
+	'DomTokenList', 
+	'Element',
+	'Headers',
+	'HtmlElement',
+	'NamedNodeMap',
+	'Node',
+	'NodeList',
+	'Request',
+	'RequestInit',
+	'RequestMode',
+	'Response',
+	'Window',
+]
